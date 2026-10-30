@@ -1,8 +1,12 @@
-name:Hello World Action
+name:Hello World Action 
+
 on: [push]
+
 jobs:
   say-Hello:
     runs-on: ubuntu-latest
+
+
     steps:
-      name: Print Hello
+    - name: Print Hello
       run: echo "Hello Github Actions"
